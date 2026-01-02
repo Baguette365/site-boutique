@@ -2,17 +2,18 @@
 
 <html lang="fr">
     <head>
+        <script type="text/javascript" src="https://livejs.com/live.js"></script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Boutique en ligne</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css.css') }}"> 
     </head>
-    
+
     <body>
-        <header</body>
-            <h1>Boutique en ligne</h1>
+        <header>
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo de la boutique" class="logo_top">
         </header>
-        <main>
-            <p>Bienvenue sur notre boutique en ligne !</p>
-        </main>
+        <p>Bienvenue sur notre boutique en ligne !</p>
+        <button>accéder a l'eboutique</button>
     </body>
 </html>
