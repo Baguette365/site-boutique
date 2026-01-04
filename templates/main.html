@@ -1,18 +1,45 @@
+<!--
+### General informations
+this is a web e-commerce shop 
+
+## code conventions
+- Use consistent indentation (4 spaces)
+- Use lowercase for HTML tags and attributes
+- Use double quotes for attribute values 
+
+
+
+
+
+
+-->
+
+
 <!DOCTYPE html>
 
 <html lang="fr">
-    <head>
-        <script type="text/javascript" src="https://livejs.com/live.js"></script>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Boutique en ligne</title>
-        <link rel="stylesheet" href="{{ url_for('static', filename='css.css') }}"> 
-    </head>
 
-    <body>
-        <header>
-            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo de la boutique" class="logo_top">
-        </header>
-        <button>accéder a l'eboutique</button>
-    </body>
+<head>
+    <script type="text/javascript" src="https://livejs.com/live.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique en ligne</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css.css') }}">
+</head>
+
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo de la boutique" class="logo_top">
+        <ul> <!--navigation bar. Only using <ul> for the navigation bar -->
+            <div>
+                <li><a class="1" href="default.asp">Qui Sommes Nous</a><a class="2">ℹ</a></li>
+                <li><a class="1" href="news.asp">E-boutique</a><a class="2">🛒</a></li>
+                <li><a href="contact.asp">Le Magasin</a><a class="2">📍</a></li>
+            </div>
+            
+        </ul>
+    </header>
+    <button onclick="window.location.href='/shopping'"">accéder a l'eboutique</button>
+</body>
+
 </html>
